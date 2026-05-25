@@ -645,7 +645,7 @@ const Index = () => {
               <div className="relative text-center">
                 <Icon name="MapPin" size={40} className="text-[#FF5500] mx-auto mb-3" />
                 <p style={{ color: "#888" }} className="text-sm">Поперечная ул., 17А, посёлок Ковалёво</p>
-                <a href="https://yandex.ru/maps" target="_blank" rel="noopener noreferrer"
+                <a href="https://yandex.ru/maps/?text=Поперечная+ул.,+17А,+посёлок+Ковалёво" target="_blank" rel="noopener noreferrer"
                   className="mt-3 inline-flex items-center gap-2 text-sm hover:underline" style={{ color: "#FF5500" }}>
                   Открыть на карте <Icon name="ExternalLink" size={14} />
                 </a>
