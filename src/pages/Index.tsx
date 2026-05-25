@@ -236,7 +236,7 @@ const Index = () => {
               style={{ transitionDelay: "550ms" }}>
               {[
                 { num: "15+", label: "лет опыта" },
-                { num: "8 000+", label: "клиентов" },
+                { num: "2 000+", label: "клиентов" },
                 { num: "12", label: "мастеров" },
                 { num: "100%", label: "гарантия" },
               ].map((s, i) => (
