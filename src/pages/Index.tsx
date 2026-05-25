@@ -330,7 +330,7 @@ const Index = () => {
               <div className="relative">
                 <img src={TIRE_IMAGE} alt="Шиномонтаж" className="rounded-2xl w-full h-80 object-cover" />
                 <div className="absolute -bottom-6 -left-6 rounded-2xl p-6 shadow-2xl" style={{ background: "#FF5500" }}>
-                  <div className="text-4xl font-black text-white" style={{ fontFamily: "'Oswald', sans-serif" }}>8 000+</div>
+                  <div className="text-4xl font-black text-white" style={{ fontFamily: "'Oswald', sans-serif" }}>2 000+</div>
                   <div className="text-sm" style={{ color: "rgba(255,255,255,0.8)" }}>клиентов доверяют нам</div>
                 </div>
                 <div className="absolute top-4 right-4 rounded-xl p-4 backdrop-blur-sm" style={{ background: "rgba(17,17,17,0.9)", border: "1px solid #2A2A2A" }}>
