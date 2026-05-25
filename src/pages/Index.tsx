@@ -85,7 +85,7 @@ function StarRating({ rating }: { rating: number }) {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: 5 }).map((_, i) => (
-        <span key={i} style={{ color: i < rating ? "#FF5500" : "#444" }}>★</span>
+        <span key={i} style={{ color: i < rating ? "#E51A1A" : "#444" }}>★</span>
       ))}
     </div>
   );
@@ -134,11 +134,11 @@ const Index = () => {
         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded flex items-center justify-center" style={{ background: "#FF5500" }}>
+            <div className="w-8 h-8 rounded flex items-center justify-center" style={{ background: "#E51A1A" }}>
               <Icon name="Wrench" size={16} className="text-white" />
             </div>
             <span className="text-xl font-bold tracking-wider text-white" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              АВТОСЕРВИС <span style={{ color: "#FF5500" }}>У РУСТАМА</span>
+              АВТОСЕРВИС <span style={{ color: "#E51A1A" }}>У РУСТАМА</span>
             </span>
           </button>
 
@@ -146,7 +146,7 @@ const Index = () => {
             {navLinks.map(link => (
               <button key={link.id} onClick={() => scrollTo(link.id)}
                 className="px-3 py-2 text-sm font-medium rounded transition-colors"
-                style={{ color: activeSection === link.id ? "#FF5500" : "#888", fontFamily: "'Golos Text', sans-serif" }}>
+                style={{ color: activeSection === link.id ? "#E51A1A" : "#888", fontFamily: "'Golos Text', sans-serif" }}>
                 {link.label}
               </button>
             ))}
@@ -154,13 +154,13 @@ const Index = () => {
 
           <div className="flex items-center gap-3">
             <a href="tel:+79605333089" className="hidden md:flex items-center gap-2 text-sm font-medium transition-colors hover:text-white"
-              style={{ color: "#FF5500" }}>
+              style={{ color: "#E51A1A" }}>
               <Icon name="Phone" size={14} />
               +7 960 533 30-89
             </a>
             <button onClick={() => scrollTo("booking")}
               className="px-4 py-2 text-sm rounded-lg font-bold text-white transition-all hover:opacity-90"
-              style={{ background: "#FF5500", fontFamily: "'Oswald', sans-serif", color: "#0A0A0A" }}>
+              style={{ background: "#E51A1A", fontFamily: "'Oswald', sans-serif", color: "#FFFFFF" }}>
               ЗАПИСАТЬСЯ
             </button>
             <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden" style={{ color: "#888" }}>
@@ -174,11 +174,11 @@ const Index = () => {
             {navLinks.map(link => (
               <button key={link.id} onClick={() => scrollTo(link.id)}
                 className="text-left px-3 py-2 rounded text-sm font-medium"
-                style={{ color: activeSection === link.id ? "#FF5500" : "#BBB" }}>
+                style={{ color: activeSection === link.id ? "#E51A1A" : "#BBB" }}>
                 {link.label}
               </button>
             ))}
-            <a href="tel:+79605333089" className="flex items-center gap-2 px-3 py-2 text-sm font-medium" style={{ color: "#FF5500" }}>
+            <a href="tel:+79605333089" className="flex items-center gap-2 px-3 py-2 text-sm font-medium" style={{ color: "#E51A1A" }}>
               <Icon name="Phone" size={14} /> +7 960 533 30-89
             </a>
           </div>
@@ -192,21 +192,21 @@ const Index = () => {
           <div className="absolute inset-0" style={{ background: "linear-gradient(100deg, #0A0A0A 50%, rgba(10,10,10,0.6) 100%)" }} />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #0A0A0A 0%, transparent 50%)" }} />
         </div>
-        <div className="absolute" style={{ top: "30%", right: 0, width: 400, height: 400, background: "radial-gradient(circle, rgba(255,85,0,0.12) 0%, transparent 70%)" }} />
+        <div className="absolute" style={{ top: "30%", right: 0, width: 400, height: 400, background: "radial-gradient(circle, rgba(229,26,26,0.12) 0%, transparent 70%)" }} />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 pt-24 pb-16">
           <div className="max-w-3xl">
             <div className={`inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full transition-all duration-700 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-              style={{ background: "rgba(255,85,0,0.12)", border: "1px solid rgba(255,85,0,0.3)", transitionDelay: "100ms" }}>
-              <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#FF5500" }} />
-              <span className="text-sm font-medium" style={{ color: "#FF5500" }}>Работаем без выходных • 9:00 – 22:00</span>
+              style={{ background: "rgba(229,26,26,0.12)", border: "1px solid rgba(229,26,26,0.3)", transitionDelay: "100ms" }}>
+              <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#E51A1A" }} />
+              <span className="text-sm font-medium" style={{ color: "#E51A1A" }}>Работаем без выходных • 9:00 – 22:00</span>
             </div>
 
             <h1 className={`text-5xl md:text-7xl font-black mb-5 leading-none tracking-tight transition-all duration-700 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ fontFamily: "'Oswald', sans-serif", transitionDelay: "200ms" }}>
               ПРОФЕССИОНАЛЬНЫЙ
               <br />
-              <span style={{ color: "#FF5500" }}>АВТОСЕРВИС</span>
+              <span style={{ color: "#E51A1A" }}>АВТОСЕРВИС</span>
               <br />
               В ВАШЕМ ГОРОДЕ
             </h1>
@@ -220,13 +220,13 @@ const Index = () => {
               style={{ transitionDelay: "450ms" }}>
               <button onClick={() => scrollTo("booking")}
                 className="flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105"
-                style={{ background: "#FF5500", color: "#0A0A0A", fontFamily: "'Oswald', sans-serif", boxShadow: "0 8px 30px rgba(255,85,0,0.4)" }}>
+                style={{ background: "#E51A1A", color: "#FFFFFF", fontFamily: "'Oswald', sans-serif", boxShadow: "0 8px 30px rgba(229,26,26,0.4)" }}>
                 <Icon name="Calendar" size={20} />
                 ЗАПИСАТЬСЯ ОНЛАЙН
               </button>
               <a href="tel:+79605333089"
                 className="flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105"
-                style={{ border: "2px solid #FF5500", color: "#FF5500", fontFamily: "'Oswald', sans-serif" }}>
+                style={{ border: "2px solid #E51A1A", color: "#E51A1A", fontFamily: "'Oswald', sans-serif" }}>
                 <Icon name="Phone" size={20} />
                 ПОЗВОНИТЬ
               </a>
@@ -241,7 +241,7 @@ const Index = () => {
                 { num: "100%", label: "гарантия" },
               ].map((s, i) => (
                 <div key={i}>
-                  <div className="text-3xl font-black" style={{ fontFamily: "'Oswald', sans-serif", color: "#FF5500" }}>{s.num}</div>
+                  <div className="text-3xl font-black" style={{ fontFamily: "'Oswald', sans-serif", color: "#E51A1A" }}>{s.num}</div>
                   <div className="text-sm" style={{ color: "#666" }}>{s.label}</div>
                 </div>
               ))}
@@ -261,10 +261,10 @@ const Index = () => {
           <AnimatedSection className="mb-14">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div>
-                <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#FF5500" }}>Что мы делаем</span>
+                <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#E51A1A" }}>Что мы делаем</span>
                 <h2 className="text-4xl md:text-5xl font-black" style={{ fontFamily: "'Oswald', sans-serif" }}>НАШИ УСЛУГИ</h2>
               </div>
-              <button onClick={() => scrollTo("prices")} className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-white" style={{ color: "#FF5500" }}>
+              <button onClick={() => scrollTo("prices")} className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-white" style={{ color: "#E51A1A" }}>
                 Смотреть прайс <Icon name="ArrowRight" size={16} />
               </button>
             </div>
@@ -275,16 +275,16 @@ const Index = () => {
               <AnimatedSection key={i} delay={i * 80}>
                 <div className="group p-7 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full"
                   style={{ background: "#111", border: "1px solid #2A2A2A" }}
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(255,85,0,0.5)")}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(229,26,26,0.5)")}
                   onMouseLeave={e => (e.currentTarget.style.borderColor = "#2A2A2A")}>
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-colors"
-                    style={{ background: "rgba(255,85,0,0.1)", border: "1px solid rgba(255,85,0,0.2)" }}>
-                    <Icon name={svc.icon} size={22} className="text-[#FF5500]" />
+                    style={{ background: "rgba(229,26,26,0.1)", border: "1px solid rgba(229,26,26,0.2)" }}>
+                    <Icon name={svc.icon} size={22} className="text-[#E51A1A]" />
                   </div>
                   <h3 className="text-xl font-bold mb-2 transition-colors" style={{ fontFamily: "'Oswald', sans-serif" }}>{svc.title}</h3>
                   <p className="text-sm leading-relaxed mb-4" style={{ color: "#888" }}>{svc.desc}</p>
                   <div className="flex items-center justify-between">
-                    <span className="font-bold text-lg" style={{ color: "#FF5500", fontFamily: "'Oswald', sans-serif" }}>{svc.price}</span>
+                    <span className="font-bold text-lg" style={{ color: "#E51A1A", fontFamily: "'Oswald', sans-serif" }}>{svc.price}</span>
                     <button onClick={() => scrollTo("booking")} className="text-xs flex items-center gap-1 transition-colors hover:text-white" style={{ color: "#555" }}>
                       Записаться <Icon name="ArrowRight" size={12} />
                     </button>
@@ -301,9 +301,9 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
-              <span className="text-sm font-semibold tracking-widest uppercase mb-3 block" style={{ color: "#FF5500" }}>Наша история</span>
+              <span className="text-sm font-semibold tracking-widest uppercase mb-3 block" style={{ color: "#E51A1A" }}>Наша история</span>
               <h2 className="text-4xl md:text-5xl font-black mb-6" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                15 ЛЕТ НА СТРАЖЕ<br /><span style={{ color: "#FF5500" }}>ВАШЕГО АВТОМОБИЛЯ</span>
+                15 ЛЕТ НА СТРАЖЕ<br /><span style={{ color: "#E51A1A" }}>ВАШЕГО АВТОМОБИЛЯ</span>
               </h2>
               <p className="leading-relaxed mb-5" style={{ color: "#BBB" }}>
                 Автосервис «У Рустама» работает с 2009 года. За это время мы обслужили более 8 000 автомобилей и завоевали доверие тысяч клиентов. Наши мастера постоянно повышают квалификацию и работают с современным диагностическим оборудованием.
@@ -319,7 +319,7 @@ const Index = () => {
                   { icon: "Truck", text: "Эвакуатор 24/7" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 p-3 rounded-xl" style={{ background: "#151515", border: "1px solid #2A2A2A" }}>
-                    <Icon name={item.icon} size={18} className="text-[#FF5500] shrink-0" />
+                    <Icon name={item.icon} size={18} className="text-[#E51A1A] shrink-0" />
                     <span className="text-sm" style={{ color: "#BBB" }}>{item.text}</span>
                   </div>
                 ))}
@@ -329,7 +329,7 @@ const Index = () => {
             <AnimatedSection delay={150}>
               <div className="relative">
                 <img src={TIRE_IMAGE} alt="Шиномонтаж" className="rounded-2xl w-full h-80 object-cover" />
-                <div className="absolute -bottom-6 -left-6 rounded-2xl p-6 shadow-2xl" style={{ background: "#FF5500" }}>
+                <div className="absolute -bottom-6 -left-6 rounded-2xl p-6 shadow-2xl" style={{ background: "#E51A1A" }}>
                   <div className="text-4xl font-black text-white" style={{ fontFamily: "'Oswald', sans-serif" }}>2 000+</div>
                   <div className="text-sm" style={{ color: "rgba(255,255,255,0.8)" }}>клиентов доверяют нам</div>
                 </div>
@@ -348,7 +348,7 @@ const Index = () => {
       <section id="prices" className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection className="text-center mb-12">
-            <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#FF5500" }}>Прозрачное ценообразование</span>
+            <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#E51A1A" }}>Прозрачное ценообразование</span>
             <h2 className="text-4xl md:text-5xl font-black" style={{ fontFamily: "'Oswald', sans-serif" }}>ПРАЙС-ЛИСТ</h2>
           </AnimatedSection>
 
@@ -359,9 +359,9 @@ const Index = () => {
                   className="px-6 py-3 rounded-xl font-medium text-sm transition-all"
                   style={{
                     fontFamily: "'Oswald', sans-serif",
-                    background: activePrice === i ? "#FF5500" : "#111",
-                    color: activePrice === i ? "#0A0A0A" : "#BBB",
-                    border: activePrice === i ? "1px solid #FF5500" : "1px solid #2A2A2A",
+                    background: activePrice === i ? "#E51A1A" : "#111",
+                    color: activePrice === i ? "#FFFFFF" : "#BBB",
+                    border: activePrice === i ? "1px solid #E51A1A" : "1px solid #2A2A2A",
                   }}>
                   {cat.category}
                 </button>
@@ -372,7 +372,7 @@ const Index = () => {
           <AnimatedSection>
             <div className="max-w-2xl mx-auto">
               <div className="rounded-2xl overflow-hidden" style={{ background: "#111", border: "1px solid #2A2A2A" }}>
-                <div className="px-6 py-4" style={{ background: "#FF5500" }}>
+                <div className="px-6 py-4" style={{ background: "#E51A1A" }}>
                   <h3 className="font-black text-xl text-white" style={{ fontFamily: "'Oswald', sans-serif" }}>
                     {prices[activePrice].category}
                   </h3>
@@ -381,7 +381,7 @@ const Index = () => {
                   <div key={i} className="flex items-center justify-between px-6 py-4 transition-colors hover:bg-[#1A1A1A]"
                     style={{ borderBottom: i < prices[activePrice].items.length - 1 ? "1px solid #1E1E1E" : "none" }}>
                     <span className="text-sm" style={{ color: "#BBB" }}>{item.name}</span>
-                    <span className="font-bold" style={{ color: "#FF5500", fontFamily: "'Oswald', sans-serif" }}>{item.price}</span>
+                    <span className="font-bold" style={{ color: "#E51A1A", fontFamily: "'Oswald', sans-serif" }}>{item.price}</span>
                   </div>
                 ))}
                 <div className="px-6 py-4" style={{ background: "#0D0D0D", borderTop: "1px solid #2A2A2A" }}>
@@ -391,7 +391,7 @@ const Index = () => {
               <div className="text-center mt-6">
                 <button onClick={() => scrollTo("booking")}
                   className="px-8 py-3 rounded-xl font-bold transition-all hover:opacity-90"
-                  style={{ fontFamily: "'Oswald', sans-serif", background: "#FF5500", color: "#0A0A0A" }}>
+                  style={{ fontFamily: "'Oswald', sans-serif", background: "#E51A1A", color: "#FFFFFF" }}>
                   ЗАПИСАТЬСЯ НА ОБСЛУЖИВАНИЕ
                 </button>
               </div>
@@ -404,7 +404,7 @@ const Index = () => {
       <section id="gallery" className="py-24 px-4" style={{ background: "#0D0D0D" }}>
         <div className="max-w-7xl mx-auto">
           <AnimatedSection className="text-center mb-12">
-            <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#FF5500" }}>Наша работа</span>
+            <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#E51A1A" }}>Наша работа</span>
             <h2 className="text-4xl md:text-5xl font-black" style={{ fontFamily: "'Oswald', sans-serif" }}>ГАЛЕРЕЯ</h2>
           </AnimatedSection>
 
@@ -440,7 +440,7 @@ const Index = () => {
       <section id="reviews" className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection className="text-center mb-14">
-            <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#FF5500" }}>Мнение клиентов</span>
+            <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#E51A1A" }}>Мнение клиентов</span>
             <h2 className="text-4xl md:text-5xl font-black mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>ОТЗЫВЫ</h2>
             <div className="flex items-center justify-center gap-3">
               <StarRating rating={5} />
@@ -453,11 +453,11 @@ const Index = () => {
               <AnimatedSection key={i} delay={i * 70}>
                 <div className="p-6 rounded-2xl transition-all duration-300 h-full flex flex-col"
                   style={{ background: "#111", border: "1px solid #2A2A2A" }}
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(255,85,0,0.3)")}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(229,26,26,0.3)")}
                   onMouseLeave={e => (e.currentTarget.style.borderColor = "#2A2A2A")}>
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm" style={{ background: "#FF5500", fontFamily: "'Oswald', sans-serif" }}>
+                      <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm" style={{ background: "#E51A1A", fontFamily: "'Oswald', sans-serif" }}>
                         {rev.name[0]}
                       </div>
                       <div>
@@ -481,7 +481,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <AnimatedSection>
-              <span className="text-sm font-semibold tracking-widest uppercase mb-3 block" style={{ color: "#FF5500" }}>Запись онлайн</span>
+              <span className="text-sm font-semibold tracking-widest uppercase mb-3 block" style={{ color: "#E51A1A" }}>Запись онлайн</span>
               <h2 className="text-4xl md:text-5xl font-black mb-4" style={{ fontFamily: "'Oswald', sans-serif" }}>
                 ЗАПИСАТЬСЯ<br />НА ОБСЛУЖИВАНИЕ
               </h2>
@@ -496,8 +496,8 @@ const Index = () => {
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4 p-4 rounded-xl" style={{ background: "#111", border: "1px solid #2A2A2A" }}>
                     <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                      style={{ background: "rgba(255,85,0,0.12)", border: "1px solid rgba(255,85,0,0.2)" }}>
-                      <Icon name={item.icon} size={18} className="text-[#FF5500]" />
+                      style={{ background: "rgba(229,26,26,0.12)", border: "1px solid rgba(229,26,26,0.2)" }}>
+                      <Icon name={item.icon} size={18} className="text-[#E51A1A]" />
                     </div>
                     <div>
                       <div className="font-semibold text-sm mb-1">{item.title}</div>
@@ -510,16 +510,16 @@ const Index = () => {
 
             <AnimatedSection delay={150}>
               {bookingDone ? (
-                <div className="rounded-2xl p-10 text-center" style={{ background: "#111", border: "1px solid rgba(255,85,0,0.4)" }}>
+                <div className="rounded-2xl p-10 text-center" style={{ background: "#111", border: "1px solid rgba(229,26,26,0.4)" }}>
                   <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5"
-                    style={{ background: "rgba(255,85,0,0.12)", border: "2px solid #FF5500" }}>
-                    <Icon name="CheckCircle" size={32} className="text-[#FF5500]" />
+                    style={{ background: "rgba(229,26,26,0.12)", border: "2px solid #E51A1A" }}>
+                    <Icon name="CheckCircle" size={32} className="text-[#E51A1A]" />
                   </div>
                   <h3 className="text-2xl font-black mb-2" style={{ fontFamily: "'Oswald', sans-serif" }}>ЗАЯВКА ОТПРАВЛЕНА!</h3>
                   <p className="text-sm mb-1" style={{ color: "#888" }}>Мы свяжемся с вами в течение 5 минут</p>
                   <p className="text-sm mb-6" style={{ color: "#666" }}>и подтвердим запись по телефону</p>
                   <button onClick={() => { setBookingDone(false); setBooking({ name: "", phone: "", service: "", date: "", time: "", comment: "" }); }}
-                    className="text-sm hover:underline" style={{ color: "#FF5500" }}>
+                    className="text-sm hover:underline" style={{ color: "#E51A1A" }}>
                     Создать ещё одну запись
                   </button>
                 </div>
@@ -534,7 +534,7 @@ const Index = () => {
                         placeholder="Иван Иванов"
                         className="w-full rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 outline-none transition-colors"
                         style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
-                        onFocus={e => (e.target.style.borderColor = "#FF5500")}
+                        onFocus={e => (e.target.style.borderColor = "#E51A1A")}
                         onBlur={e => (e.target.style.borderColor = "#2A2A2A")} />
                     </div>
                     <div>
@@ -543,7 +543,7 @@ const Index = () => {
                         placeholder="+7 (999) 000-00-00" type="tel"
                         className="w-full rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 outline-none transition-colors"
                         style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
-                        onFocus={e => (e.target.style.borderColor = "#FF5500")}
+                        onFocus={e => (e.target.style.borderColor = "#E51A1A")}
                         onBlur={e => (e.target.style.borderColor = "#2A2A2A")} />
                     </div>
                   </div>
@@ -553,7 +553,7 @@ const Index = () => {
                     <select required value={booking.service} onChange={e => setBooking({ ...booking, service: e.target.value })}
                       className="w-full rounded-xl px-4 py-3 text-sm text-white outline-none transition-colors appearance-none cursor-pointer"
                       style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
-                      onFocus={e => (e.target.style.borderColor = "#FF5500")}
+                      onFocus={e => (e.target.style.borderColor = "#E51A1A")}
                       onBlur={e => (e.target.style.borderColor = "#2A2A2A")}>
                       <option value="" disabled>Выберите услугу</option>
                       {allServices.map(s => <option key={s} value={s} style={{ background: "#1A1A1A" }}>{s}</option>)}
@@ -566,7 +566,7 @@ const Index = () => {
                       <input required type="date" min={today} value={booking.date} onChange={e => setBooking({ ...booking, date: e.target.value })}
                         className="w-full rounded-xl px-4 py-3 text-sm text-white outline-none transition-colors"
                         style={{ background: "#1A1A1A", border: "1px solid #2A2A2A", colorScheme: "dark" }}
-                        onFocus={e => (e.target.style.borderColor = "#FF5500")}
+                        onFocus={e => (e.target.style.borderColor = "#E51A1A")}
                         onBlur={e => (e.target.style.borderColor = "#2A2A2A")} />
                     </div>
                     <div>
@@ -574,7 +574,7 @@ const Index = () => {
                       <select required value={booking.time} onChange={e => setBooking({ ...booking, time: e.target.value })}
                         className="w-full rounded-xl px-4 py-3 text-sm text-white outline-none transition-colors appearance-none cursor-pointer"
                         style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
-                        onFocus={e => (e.target.style.borderColor = "#FF5500")}
+                        onFocus={e => (e.target.style.borderColor = "#E51A1A")}
                         onBlur={e => (e.target.style.borderColor = "#2A2A2A")}>
                         <option value="" disabled>Выберите время</option>
                         {timeSlots.map(t => <option key={t} value={t} style={{ background: "#1A1A1A" }}>{t}</option>)}
@@ -588,13 +588,13 @@ const Index = () => {
                       placeholder="Марка и модель автомобиля, описание проблемы..." rows={3}
                       className="w-full rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 outline-none transition-colors resize-none"
                       style={{ background: "#1A1A1A", border: "1px solid #2A2A2A" }}
-                      onFocus={e => (e.target.style.borderColor = "#FF5500")}
+                      onFocus={e => (e.target.style.borderColor = "#E51A1A")}
                       onBlur={e => (e.target.style.borderColor = "#2A2A2A")} />
                   </div>
 
                   <button type="submit"
                     className="w-full py-4 rounded-xl font-black text-lg transition-all hover:opacity-90 hover:scale-[1.01]"
-                    style={{ fontFamily: "'Oswald', sans-serif", background: "#FF5500", color: "#0A0A0A", boxShadow: "0 8px 25px rgba(255,85,0,0.3)" }}>
+                    style={{ fontFamily: "'Oswald', sans-serif", background: "#E51A1A", color: "#FFFFFF", boxShadow: "0 8px 25px rgba(229,26,26,0.3)" }}>
                     ЗАПИСАТЬСЯ НА ОБСЛУЖИВАНИЕ
                   </button>
                   <p className="text-xs text-center" style={{ color: "#444" }}>Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
@@ -609,7 +609,7 @@ const Index = () => {
       <section id="contacts" className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection className="text-center mb-14">
-            <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#FF5500" }}>Как нас найти</span>
+            <span className="text-sm font-semibold tracking-widest uppercase mb-2 block" style={{ color: "#E51A1A" }}>Как нас найти</span>
             <h2 className="text-4xl md:text-5xl font-black" style={{ fontFamily: "'Oswald', sans-serif" }}>КОНТАКТЫ</h2>
           </AnimatedSection>
 
@@ -622,11 +622,11 @@ const Index = () => {
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="p-7 rounded-2xl text-center transition-all"
                   style={{ background: "#111", border: "1px solid #2A2A2A" }}
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(255,85,0,0.4)")}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(229,26,26,0.4)")}
                   onMouseLeave={e => (e.currentTarget.style.borderColor = "#2A2A2A")}>
                   <div className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5"
-                    style={{ background: "rgba(255,85,0,0.1)", border: "1px solid rgba(255,85,0,0.2)" }}>
-                    <Icon name={item.icon} size={24} className="text-[#FF5500]" />
+                    style={{ background: "rgba(229,26,26,0.1)", border: "1px solid rgba(229,26,26,0.2)" }}>
+                    <Icon name={item.icon} size={24} className="text-[#E51A1A]" />
                   </div>
                   <h3 className="font-black text-lg mb-3" style={{ fontFamily: "'Oswald', sans-serif" }}>{item.title}</h3>
                   {item.lines.map((line, j) => (
@@ -643,10 +643,10 @@ const Index = () => {
             <div className="rounded-2xl overflow-hidden flex items-center justify-center relative" style={{ background: "#111", border: "1px solid #2A2A2A", height: 280 }}>
               <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #1A1A1A, #0D0D0D)" }} />
               <div className="relative text-center">
-                <Icon name="MapPin" size={40} className="text-[#FF5500] mx-auto mb-3" />
+                <Icon name="MapPin" size={40} className="text-[#E51A1A] mx-auto mb-3" />
                 <p style={{ color: "#888" }} className="text-sm">Поперечная улица, 17А, пос. Ковалёво, Ленинградская обл.</p>
                 <a href="https://yandex.ru/maps/?text=Поперечная+улица,+посёлок+Ковалёво,+Всеволожское+городское+поселение,+Ленинградская+область" target="_blank" rel="noopener noreferrer"
-                  className="mt-3 inline-flex items-center gap-2 text-sm hover:underline" style={{ color: "#FF5500" }}>
+                  className="mt-3 inline-flex items-center gap-2 text-sm hover:underline" style={{ color: "#E51A1A" }}>
                   Открыть на карте <Icon name="ExternalLink" size={14} />
                 </a>
               </div>
@@ -656,7 +656,7 @@ const Index = () => {
       </section>
 
       {/* CTA BANNER */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ background: "#FF5500" }}>
+      <section className="py-20 px-4 relative overflow-hidden" style={{ background: "#E51A1A" }}>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl" style={{ background: "rgba(255,255,255,0.08)" }} />
         <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full blur-3xl" style={{ background: "rgba(255,255,255,0.06)" }} />
         <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -669,7 +669,7 @@ const Index = () => {
           <div className="flex flex-wrap gap-4 justify-center">
             <button onClick={() => scrollTo("booking")}
               className="px-8 py-4 rounded-xl font-black text-lg transition-all hover:scale-105"
-              style={{ background: "white", color: "#FF5500", fontFamily: "'Oswald', sans-serif" }}>
+              style={{ background: "white", color: "#E51A1A", fontFamily: "'Oswald', sans-serif" }}>
               ЗАПИСАТЬСЯ ОНЛАЙН
             </button>
             <a href="tel:+79605333089"
@@ -687,11 +687,11 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded flex items-center justify-center" style={{ background: "#FF5500" }}>
+                <div className="w-8 h-8 rounded flex items-center justify-center" style={{ background: "#E51A1A" }}>
                   <Icon name="Wrench" size={14} className="text-white" />
                 </div>
                 <span className="font-black text-xl" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                  АВТОСЕРВИС <span style={{ color: "#FF5500" }}>У РУСТАМА</span>
+                  АВТОСЕРВИС <span style={{ color: "#E51A1A" }}>У РУСТАМА</span>
                 </span>
               </div>
               <p className="text-sm leading-relaxed" style={{ color: "#555" }}>

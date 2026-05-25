@@ -13,8 +13,8 @@
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 24 100% 50%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 0 78% 50%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 90%;
@@ -22,30 +22,30 @@
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 24 100% 50%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 0 78% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 0 0% 18%;
     --input: 0 0% 15%;
-    --ring: 24 100% 50%;
+    --ring: 0 78% 50%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 24 100% 50%;
-    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-primary: 0 78% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 15%;
     --sidebar-accent-foreground: 0 0% 90%;
     --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 24 100% 50%;
+    --sidebar-ring: 0 78% 50%;
 
     /* Brand colors */
-    --brand-orange: #ff5500;
-    --brand-orange-light: #ff6b1a;
+    --brand-orange: #e51a1a;
+    --brand-orange-light: #ff3333;
     --brand-dark: #0a0a0a;
     --brand-card: #111111;
     --brand-border: #2a2a2a;
@@ -134,11 +134,11 @@
   }
 
   .orange-glow {
-    box-shadow: 0 0 30px rgba(255, 85, 0, 0.3);
+    box-shadow: 0 0 30px rgba(229, 26, 26, 0.3);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #ff5500, #ff9a00);
+    background: linear-gradient(135deg, #e51a1a, #ff5555);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -195,6 +195,6 @@
   background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ff5500;
+  background: #e51a1a;
   border-radius: 3px;
 }
