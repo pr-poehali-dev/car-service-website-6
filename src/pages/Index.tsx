@@ -153,10 +153,10 @@ const Index = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <a href="tel:+78001234567" className="hidden md:flex items-center gap-2 text-sm font-medium transition-colors hover:text-white"
+            <a href="tel:+79605333089" className="hidden md:flex items-center gap-2 text-sm font-medium transition-colors hover:text-white"
               style={{ color: "#FF5500" }}>
               <Icon name="Phone" size={14} />
-              8 800 123-45-67
+              +7 960 533 30-89
             </a>
             <button onClick={() => scrollTo("booking")}
               className="px-4 py-2 text-sm rounded-lg font-bold text-white transition-all hover:opacity-90"
@@ -178,8 +178,8 @@ const Index = () => {
                 {link.label}
               </button>
             ))}
-            <a href="tel:+78001234567" className="flex items-center gap-2 px-3 py-2 text-sm font-medium" style={{ color: "#FF5500" }}>
-              <Icon name="Phone" size={14} /> 8 800 123-45-67
+            <a href="tel:+79605333089" className="flex items-center gap-2 px-3 py-2 text-sm font-medium" style={{ color: "#FF5500" }}>
+              <Icon name="Phone" size={14} /> +7 960 533 30-89
             </a>
           </div>
         )}
@@ -224,7 +224,7 @@ const Index = () => {
                 <Icon name="Calendar" size={20} />
                 ЗАПИСАТЬСЯ ОНЛАЙН
               </button>
-              <a href="tel:+78001234567"
+              <a href="tel:+79605333089"
                 className="flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105"
                 style={{ border: "2px solid #FF5500", color: "#FF5500", fontFamily: "'Oswald', sans-serif" }}>
                 <Icon name="Phone" size={20} />
@@ -616,7 +616,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
             {[
               { icon: "MapPin", title: "Адрес", lines: ["Поперечная улица, 17А", "пос. Ковалёво, Ленинградская обл."], href: "https://yandex.ru/maps/?text=Поперечная+улица,+посёлок+Ковалёво,+Всеволожское+городское+поселение,+Ленинградская+область" },
-              { icon: "Phone", title: "Телефон", lines: ["8 800 123-45-67", "+7 (999) 123-45-67"], href: "tel:+78001234567" },
+              { icon: "Phone", title: "Телефон", lines: ["+7 960 533 30-89", "+7 960 533 30-89"], href: "tel:+79605333089" },
               { icon: "Clock", title: "Режим работы", lines: ["Пн–Пт: 8:00 – 21:00", "Сб–Вс: 9:00 – 19:00"] },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 100}>
@@ -672,7 +672,7 @@ const Index = () => {
               style={{ background: "white", color: "#FF5500", fontFamily: "'Oswald', sans-serif" }}>
               ЗАПИСАТЬСЯ ОНЛАЙН
             </button>
-            <a href="tel:+78001234567"
+            <a href="tel:+79605333089"
               className="px-8 py-4 rounded-xl font-black text-lg transition-all hover:scale-105"
               style={{ border: "2px solid white", color: "white", fontFamily: "'Oswald', sans-serif" }}>
               ПОЗВОНИТЬ НАМ
@@ -711,8 +711,8 @@ const Index = () => {
             <div>
               <h4 className="font-black text-sm mb-4" style={{ fontFamily: "'Oswald', sans-serif", color: "#888" }}>КОНТАКТЫ</h4>
               <div className="space-y-3">
-                <a href="tel:+78001234567" className="flex items-center gap-2 text-sm transition-colors hover:text-white" style={{ color: "#555" }}>
-                  <Icon name="Phone" size={14} /> 8 800 123-45-67
+                <a href="tel:+79605333089" className="flex items-center gap-2 text-sm transition-colors hover:text-white" style={{ color: "#555" }}>
+                  <Icon name="Phone" size={14} /> +7 960 533 30-89
                 </a>
                 <div className="flex items-center gap-2 text-sm" style={{ color: "#555" }}>
                   <Icon name="MapPin" size={14} /> ул. Автомобильная, 1
