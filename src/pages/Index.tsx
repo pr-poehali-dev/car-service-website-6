@@ -138,7 +138,7 @@ const Index = () => {
               <Icon name="Wrench" size={16} className="text-white" />
             </div>
             <span className="text-xl font-bold tracking-wider text-white" style={{ fontFamily: "'Oswald', sans-serif" }}>
-              АВТО<span style={{ color: "#FF5500" }}>МАСТЕР</span>
+              АВТОСЕРВИС <span style={{ color: "#FF5500" }}>У РУСТАМА</span>
             </span>
           </button>
 
@@ -306,7 +306,7 @@ const Index = () => {
                 15 ЛЕТ НА СТРАЖЕ<br /><span style={{ color: "#FF5500" }}>ВАШЕГО АВТОМОБИЛЯ</span>
               </h2>
               <p className="leading-relaxed mb-5" style={{ color: "#BBB" }}>
-                Автосервис «АвтоМастер» работает с 2009 года. За это время мы обслужили более 8 000 автомобилей и завоевали доверие тысяч клиентов. Наши мастера постоянно повышают квалификацию и работают с современным диагностическим оборудованием.
+                Автосервис «У Рустама» работает с 2009 года. За это время мы обслужили более 8 000 автомобилей и завоевали доверие тысяч клиентов. Наши мастера постоянно повышают квалификацию и работают с современным диагностическим оборудованием.
               </p>
               <p className="leading-relaxed mb-8" style={{ color: "#777" }}>
                 Мы специализируемся на автомобилях всех марок — от отечественных до премиальных иномарок. Работаем честно: объясняем, что нужно делать и почему, не навязываем лишнего.
@@ -691,7 +691,7 @@ const Index = () => {
                   <Icon name="Wrench" size={14} className="text-white" />
                 </div>
                 <span className="font-black text-xl" style={{ fontFamily: "'Oswald', sans-serif" }}>
-                  АВТО<span style={{ color: "#FF5500" }}>МАСТЕР</span>
+                  АВТОСЕРВИС <span style={{ color: "#FF5500" }}>У РУСТАМА</span>
                 </span>
               </div>
               <p className="text-sm leading-relaxed" style={{ color: "#555" }}>
@@ -724,7 +724,7 @@ const Index = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 pt-6" style={{ borderTop: "1px solid #1E1E1E" }}>
-            <p className="text-xs" style={{ color: "#444" }}>© 2024 АвтоМастер. Все права защищены.</p>
+            <p className="text-xs" style={{ color: "#444" }}>© 2024 Автосервис У Рустама. Все права защищены.</p>
             <p className="text-xs" style={{ color: "#333" }}>Нажимая «Записаться», вы принимаете политику конфиденциальности</p>
           </div>
         </div>
