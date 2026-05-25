@@ -615,7 +615,7 @@ const Index = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
             {[
-              { icon: "MapPin", title: "Адрес", lines: ["ул. Автомобильная, 1", "г. Москва, м. Автозаводская"] },
+              { icon: "MapPin", title: "Адрес", lines: ["Поперечная ул., 17А", "посёлок Ковалёво"] },
               { icon: "Phone", title: "Телефон", lines: ["8 800 123-45-67", "+7 (999) 123-45-67"], href: "tel:+78001234567" },
               { icon: "Clock", title: "Режим работы", lines: ["Пн–Пт: 8:00 – 21:00", "Сб–Вс: 9:00 – 19:00"] },
             ].map((item, i) => (
@@ -644,7 +644,7 @@ const Index = () => {
               <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #1A1A1A, #0D0D0D)" }} />
               <div className="relative text-center">
                 <Icon name="MapPin" size={40} className="text-[#FF5500] mx-auto mb-3" />
-                <p style={{ color: "#888" }} className="text-sm">ул. Автомобильная, 1, г. Москва</p>
+                <p style={{ color: "#888" }} className="text-sm">Поперечная ул., 17А, посёлок Ковалёво</p>
                 <a href="https://yandex.ru/maps" target="_blank" rel="noopener noreferrer"
                   className="mt-3 inline-flex items-center gap-2 text-sm hover:underline" style={{ color: "#FF5500" }}>
                   Открыть на карте <Icon name="ExternalLink" size={14} />
