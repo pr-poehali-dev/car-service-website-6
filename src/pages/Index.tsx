@@ -199,7 +199,7 @@ const Index = () => {
             <div className={`inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full transition-all duration-700 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
               style={{ background: "rgba(255,85,0,0.12)", border: "1px solid rgba(255,85,0,0.3)", transitionDelay: "100ms" }}>
               <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#FF5500" }} />
-              <span className="text-sm font-medium" style={{ color: "#FF5500" }}>Работаем без выходных • 8:00 – 21:00</span>
+              <span className="text-sm font-medium" style={{ color: "#FF5500" }}>Работаем без выходных • 9:00 – 22:00</span>
             </div>
 
             <h1 className={`text-5xl md:text-7xl font-black mb-5 leading-none tracking-tight transition-all duration-700 ${heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
@@ -617,7 +617,7 @@ const Index = () => {
             {[
               { icon: "MapPin", title: "Адрес", lines: ["Поперечная улица, 17А", "пос. Ковалёво, Ленинградская обл."], href: "https://yandex.ru/maps/?text=Поперечная+улица,+посёлок+Ковалёво,+Всеволожское+городское+поселение,+Ленинградская+область" },
               { icon: "Phone", title: "Телефон", lines: ["+7 960 533 30-89", "+7 960 533 30-89"], href: "tel:+79605333089" },
-              { icon: "Clock", title: "Режим работы", lines: ["Пн–Пт: 8:00 – 21:00", "Сб–Вс: 9:00 – 19:00"] },
+              { icon: "Clock", title: "Режим работы", lines: ["Пн–Вс: 9:00 – 22:00", "Без выходных"] },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={i * 100}>
                 <div className="p-7 rounded-2xl text-center transition-all"
@@ -718,7 +718,7 @@ const Index = () => {
                   <Icon name="MapPin" size={14} /> ул. Автомобильная, 1
                 </div>
                 <div className="flex items-center gap-2 text-sm" style={{ color: "#555" }}>
-                  <Icon name="Clock" size={14} /> Пн–Вс: 8:00 – 21:00
+                  <Icon name="Clock" size={14} /> Пн–Вс: 9:00 – 22:00
                 </div>
               </div>
             </div>
