@@ -135,10 +135,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
             <img
-              src="https://cdn.poehali.dev/projects/b9ca1be9-3d27-433f-8f4b-e8d3d5505d6f/bucket/b39cc5b5-a66b-4901-80bc-a91b2bed1a69.png"
+              src="https://cdn.poehali.dev/projects/b9ca1be9-3d27-433f-8f4b-e8d3d5505d6f/bucket/db00ceb2-667f-46b0-aa49-df64cd8b409c.png"
               alt="Логотип"
-              className="h-7 w-auto object-contain"
-              style={{ mixBlendMode: "lighten" }}
+              className="h-9 w-auto object-contain"
+              style={{ marginBottom: "-2px" }}
             />
             <span className="text-xl font-bold tracking-wider text-white" style={{ fontFamily: "'Oswald', sans-serif" }}>
               АВТОСЕРВИС <span style={{ color: "#E51A1A" }}>У РУСТАМА</span>
@@ -691,10 +691,10 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <img
-                  src="https://cdn.poehali.dev/projects/b9ca1be9-3d27-433f-8f4b-e8d3d5505d6f/bucket/b39cc5b5-a66b-4901-80bc-a91b2bed1a69.png"
+                  src="https://cdn.poehali.dev/projects/b9ca1be9-3d27-433f-8f4b-e8d3d5505d6f/bucket/db00ceb2-667f-46b0-aa49-df64cd8b409c.png"
                   alt="Логотип"
-                  className="h-7 w-auto object-contain"
-                  style={{ mixBlendMode: "lighten" }}
+                  className="h-9 w-auto object-contain"
+                  style={{ marginBottom: "-2px" }}
                 />
                 <span className="font-black text-xl" style={{ fontFamily: "'Oswald', sans-serif" }}>
                   АВТОСЕРВИС <span style={{ color: "#E51A1A" }}>У РУСТАМА</span>
