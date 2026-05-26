@@ -134,9 +134,12 @@ const Index = () => {
         className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded flex items-center justify-center" style={{ background: "#E51A1A" }}>
-              <Icon name="Wrench" size={16} className="text-white" />
-            </div>
+            <img
+              src="https://cdn.poehali.dev/projects/b9ca1be9-3d27-433f-8f4b-e8d3d5505d6f/bucket/b39cc5b5-a66b-4901-80bc-a91b2bed1a69.png"
+              alt="Логотип"
+              className="h-7 w-auto object-contain"
+              style={{ mixBlendMode: "lighten" }}
+            />
             <span className="text-xl font-bold tracking-wider text-white" style={{ fontFamily: "'Oswald', sans-serif" }}>
               АВТОСЕРВИС <span style={{ color: "#E51A1A" }}>У РУСТАМА</span>
             </span>
@@ -687,9 +690,12 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded flex items-center justify-center" style={{ background: "#E51A1A" }}>
-                  <Icon name="Wrench" size={14} className="text-white" />
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/b9ca1be9-3d27-433f-8f4b-e8d3d5505d6f/bucket/b39cc5b5-a66b-4901-80bc-a91b2bed1a69.png"
+                  alt="Логотип"
+                  className="h-7 w-auto object-contain"
+                  style={{ mixBlendMode: "lighten" }}
+                />
                 <span className="font-black text-xl" style={{ fontFamily: "'Oswald', sans-serif" }}>
                   АВТОСЕРВИС <span style={{ color: "#E51A1A" }}>У РУСТАМА</span>
                 </span>
